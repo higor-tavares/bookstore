@@ -9,7 +9,7 @@ import javax.persistence.*
 data class Product(
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "productSeq")
-    val id: Long,
+    val id: Long?,
     val name: String,
     val description: String,
     val price: Int,
