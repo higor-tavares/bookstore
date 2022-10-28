@@ -7,10 +7,11 @@ import java.time.LocalDateTime
 data class ProductSaveRequest(
     val name: String,
     val description: String,
+    val photo: String,
     val price: Int)
 {
     fun toModel() : Product{
-        return Product(null,name, description, price, LocalDateTime.now())
+        return Product(null,name, description, price, photo, LocalDateTime.now())
     }
 }
 
